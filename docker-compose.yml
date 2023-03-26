@@ -15,11 +15,13 @@ services:
     image: app
     build: .
     ports:
-      - '9000:9004'
+      - '9001:9001'
     environment:
-      - APP_PORT=9004
+      - APP_PORT=9001
       - APP_HOST=0.0.0.0
       - DB_URL=postgres://user:pass@db:5432/app
     depends_on:
       - db
     restart: unless-stopped
+ 
+ 
